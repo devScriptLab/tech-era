@@ -3,32 +3,34 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  height: 90vh;
   padding-top: 20px;
+  padding-bottom: 20px;
   @media screen and (min-width: 768px) {
     align-items: center;
-    padding-top: 0px;
+    padding-top: 58px;
   }
 `
 
 export const ResponsiveContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 80%;
   max-width: 1110px;
   box-shadow: 0px 0px 12px 8px #f4f4f4;
-  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
 `
 
 export const CourseImageContainer = styled.div`
   width: 100%;
   @media screen and (min-width: 768px) {
-    width: 40%;
-    height: 420px;
+    width: 35%;
+    height: 380px;
   }
 `
 
@@ -42,12 +44,11 @@ export const CourseDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  padding: 21px;
   @media screen and (min-width: 768px) {
-    width: 60%;
+    width: 65%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
 `
 
@@ -62,7 +63,7 @@ export const CourseName = styled.h1`
 export const CourseDescription = styled.p`
   color: #475569;
   font-family: 'Roboto';
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
 `
 
